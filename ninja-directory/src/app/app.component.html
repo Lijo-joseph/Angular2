@@ -1,0 +1,92 @@
+<ChildComponent></ChildComponent>
+<div class="input-controls">
+    
+  <h4>Name <input type="text" id="name" [(ngModel)]="name" /><b>
+ No.of seats <input type="number" id="no." [(ngModel)]="number" /><h4>
+   
+<button  class="button"(click)="clicked()">Start Selecting</button>
+
+
+
+<style>
+
+</style>
+<br>
+<br>
+
+
+<div></div>
+
+
+<div style="width:1200px;height:20px; border:1px solid #000; align-content: center;  ">Screen</div>
+
+
+
+
+ 
+  
+
+  <ul>
+
+
+     <ul>
+   <tr> <th *ngFor="let a of fakeArray; let index = index"> 
+       
+ {{ index + 1 }} 
+<li *ngFor="let item of names">{{item}} <div class="#div"  style="width:20px;height:20px;border:1px solid #00F;  background-color:00F"></div></li>
+      </th></tr>
+<th *ngFor="let a of fakeArray; let index = index"> 
+        
+ {{ index + 1 }} 
+
+
+
+
+      </th>
+</ul>    
+</ul>
+
+
+<button class="button" (click)="onClick()">Confirm Selection!</button>
+   
+
+
+
+
+
+
+
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>No. Of Seats</th>
+    <th>Seat No.</th>
+  </tr>
+  <tr>
+ <td>{{name}}</td>
+
+   
+    <td>{{number}}</td>
+    <td></td>
+  </tr>
+  
+</table>
